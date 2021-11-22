@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+.myImage {
+
+  margin: 0 auto !important;
+  width: 80% !important;
+}
+
+.main-row {
+
+  width: 100% !important;
+}
+
+.customBtn {
+  
+  margin: 0 auto !important;
+  margin-left: 25% !important;
+  width: 25% !important;
+}
