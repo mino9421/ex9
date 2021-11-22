@@ -53,7 +53,7 @@ export default class LabEx extends Component {
                         this.state.users.map(user => (
 
 
-                            <Card bg="info" className="">
+                            <Card bg="info" className="myCard">
                                 
 
                                 <Card.Header >
@@ -71,38 +71,38 @@ export default class LabEx extends Component {
                                             <Card.Body>
                                         
                                                 <div>
-                                                    Gender: {user.gender}
-                                                </div>
-                                                
-                                                <div>
-                                                    Time Zone Description: {user.location.timezone.description}
-                                                </div>
+                                                    <p>
+                                                        <b>Gender: </b>{user.gender}
+                                                    </p>
+                                                    
+                                                    <p>
+                                                        <b>Time Zone Description: </b>{user.location.timezone.description}
+                                                    </p>
 
-                                                <div>
-                                                    Address: {user.location.street.number},
-                                                    {user.location.street.name},
-                                                    {user.location.city}
-                                                    {user.location.state}
-                                                    {user.location.country}
-                                                    {user.location.postcode}
-                                                </div>
+                                                    <p>
+                                                        <b>Address:</b> {user.location.street.number},
+                                                        {user.location.street.name},
+                                                        {user.location.city}
+                                                        {user.location.state}
+                                                        {user.location.country}
+                                                        {user.location.postcode}  
+                                                    </p>
 
-                                                <div>
-                                                    Email: user.email
-
-                                                </div>
-
-                                                <div>
-                                                    Birth Data and Age: {user.dob.date} - {user.dob.age}
-                                                </div>
-
-                                                <div>
-                                                     Register Date: {user.registered.date}
-                                                </div>
-
-                                                <div>
-                                                    Phone#: {user.phone}
-                                                    Cell#: {user.cell}
+                                                    <p>
+                                                        <b>Email:</b> user.email
+                                                    </p>
+                                                    <p>
+                                                        <b>Birth Data and Age:</b> {user.dob.date} - {user.dob.age}
+                                                    </p>
+                                                    <p>
+                                                        <b>Register Date:</b> {user.registered.date}
+                                                    </p>
+                                                    <p>
+                                                        <b>Phone#: </b> {user.phone}
+                                                    </p>
+                                                    <p>
+                                                        <b>Cell#: </b> {user.cell}
+                                                    </p>
                                                 </div>
                                                 
                                            </Card.Body>
